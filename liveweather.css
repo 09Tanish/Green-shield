@@ -1,0 +1,204 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 30px;
+    color: #4e8bff;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.tab-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab {
+    font-size: 1.2rem;
+    margin: 0 20px;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tab:hover {
+    background-color: #4e8bff;
+    color: white;
+}
+
+.weather-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sub-container {
+    margin-bottom: 20px;
+}
+
+.grant-location-container {
+    background-color: #e9f0fe;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.grant-location-container img {
+    margin-bottom: 10px;
+}
+
+.grant-location-container p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.grant-location-container .btn {
+    background-color: #4e8bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.grant-location-container .btn:hover {
+    background-color: #357ad1;
+}
+
+.form-container {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    font-size: 1.1rem;
+    margin-right: 10px;
+}
+
+.form-container input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.form-container button {
+    background-color: #4e8bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #357ad1;
+}
+
+.loading-container {
+    display: none;
+    text-align: center;
+}
+
+.user-info-container {
+    display: none;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.name img {
+    margin-left: 10px;
+}
+
+.parameter-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.parameter {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.parameter img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.parameter p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.parameter p[data-windspeed],
+.parameter p[data-humidity],
+.parameter p[data-cloudiness] {
+    font-weight: bold;
+    color: #333;
+}
+
+.weather-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.weather-info img {
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .parameter-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .parameter {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .tab-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tab {
+        margin: 10px 0;
+    }
+}
